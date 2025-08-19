@@ -53,7 +53,9 @@ Now you need to go to your repository settings > `Secrets and variables` > `Acti
 - Swap out the [`LICENSE`](LICENSE) to your own liking _**(especially change out my name for yours)**_
 - Populate the [`info.json`](info.json) file with correct values _(the `version` field gets updated automatically)_
 - Add the corresponding text into [`locale.cfg`](locale/en/locale.cfg)
-- Add a `thumbnail.png` to the root of the repository _([ideally 144x144px](https://wiki.factorio.com/Tutorial:Mod_structure#Files))_
+- Add a `thumbnail.png` to the root of the repository
+
+More details about a mods structure can be found in the [documentation](https://lua-api.factorio.com/latest/auxiliary/mod-structure.html).
 
 # Misc
 
@@ -69,7 +71,7 @@ git archive --format zip --prefix [YOUR-MOD-NAME]/ --worktree-attributes --outpu
 
 ## Changing the commit message convention
 
-If you want to change the commit message convention you can do so by changing the 2 `preset` fields in the [`.releaserc.json`](.releaserc.json) file. \
+If you want to change the commit message convention you can do so by changing the 2 `preset` fields in the [`.releaserc`](.releaserc) file. \
 Possible presets are: [`angular`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular), [`atom`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-atom), [`codemirror`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-codemirror), [`ember`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-ember), [`eslint`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-eslint), [`express`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-express), [`jquery`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-jquery), [`jshint`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-jshint), [`conventionalcommits`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-conventionalcommits).
 
 Additionally you also need to modify the worflow file [`.github/workflows/release.yml`](.github/workflows/release.yml) to use the package that corresponds to your chosen preset. \
@@ -77,5 +79,5 @@ Replace `conventional-changelog-conventionalcommits` with `conventional-changelo
 
 ## Need help?
 
-Checkout the [official Factorio Discord](https://discord.gg/factorio) and check the pins in the `#mod-making` channel. \
+Checkout the [official Factorio Discord](https://discord.gg/factorio) and check the `#mod-dev-guide` channel. \
 There is also the [Lua API documentation](https://lua-api.factorio.com/latest/) and the [modding section in the wiki](https://wiki.factorio.com/Modding).
