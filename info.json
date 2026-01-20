@@ -1,18 +1,21 @@
 {
-  "name": "[internal-mod-name]",
-  "version": "0.0.0",
-  "title": "[MOD DISPLAY NAME]",
-  "author": "[YOUR MODS.FACTORIO.COM USERNAME]",
-  "homepage": "[HOMEPAGE/REPO URL]",
-  "description": "[SHORT DESCRIPTION]",
+  "name": "oscillating-modules",
+  "version": "1.0.0",
+  "title": "Oscillating Modules",
+  "author": "juh9870",
+  "homepage": "https://github.com/juh9870/oscillating-modules",
+  "description": "Spices up your factorio experience by making once static module effects to fluctuate over time (customizable)\nDefault patterns include:\n- Sine Wave - Module effect gradually oscillates between 200% and 0% over the course of 100 seconds\n- Toggle - Module effect toggles instantly between 200% and 0% every minute\n- Decay - Module effect starts at 300% but halves every minute for 10 minutes until stopping at 5% effect after an hour\n- Custom - define your own effects!",
   "factorio_version": "2.0",
   "dependencies": [
-    "base"
+    "base",
+    "flib",
+    "(?) module-config",
+    "(?) procedural-modules"
   ],
   "quality_required": false,
   "rail_bridges_required": false,
   "space_travel_required": false,
-  "spoiling_required": false,
+  "spoiling_required": true,
   "freezing_required": false,
   "segmented_units_required": false,
   "expansion_shaders_required": false
