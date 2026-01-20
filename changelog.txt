@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2026-01-20
+  Features:
+    - initial release
+    - use config instead of custom package [skip ci]
+  Bugfixes:
+    - add missing `rail_bridges` feature flag ([#5](https://github.com/juh9870/oscillating-modules/issues/5))
+    - bump major for breaking changes ([#6](https://github.com/juh9870/oscillating-modules/issues/6))
+    - correct key for name / description [skip ci]
+    - trigger releases with all listed commit types [skip ci]
+    - update conventionalcommits-factorio to v2 [skip ci]
+  Graphics:
+    - added thumbnail
